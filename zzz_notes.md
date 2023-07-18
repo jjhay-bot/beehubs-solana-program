@@ -36,9 +36,9 @@ dismiss cargo aerobic subway goddess fence arch jacket beef goose shock embark
 
 - solana config get
 
-- solana airdrop 2
+- solana airdrop 4
 
-- solana airdrop 1 <RECIPIENT_ACCOUNT_ADDRESS> --url https://api.devnet.solana.com
+- solana airdrop 4 <RECIPIENT_ACCOUNT_ADDRESS> --url https://api.devnet.solana.com
 
 
 
@@ -54,7 +54,9 @@ Then, change cluster = "localnet" to cluster = "devnet".
 
 - solana address -k target/deploy/myepicproject-keypair.json `(update declared_id on lib.rs)`
 
+<!-- 
 - Now, go to Anchor.toml and under [programs.devnet] you'll see something like myepicproject = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS". Go ahead and change this id to the same id output when you run solana address -k target/deploy/myepicproject-keypair.json.
+-->
 
 - anchor build
 
@@ -66,4 +68,6 @@ Then, change cluster = "localnet" to cluster = "devnet".
 
 - solana program deploy -u devnet ./target/deploy/beehubs.so
 
+<!-- 
 solana airdrop 4 CGZPb2KpyVucADfSoMjzfpP9m4hJHvKdXPBPYjR7uW64 --url https://api.devnet.solana.com
+-->
